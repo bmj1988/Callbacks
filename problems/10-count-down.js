@@ -28,7 +28,15 @@ Example 4:
 
 ***********************************************************************/
 
-// Your code here
+const countDownTimer = n => {
+  let count = n
+  return function() {
+    count--
+    if (count === 0) {
+      return "Happy New Year!"
+    }
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
